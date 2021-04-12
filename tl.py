@@ -23,3 +23,4 @@ if upload is not None:
   a=int(y[0][0])
   categories = ['Human','Horse']
   st.title(categories[a])
+   
