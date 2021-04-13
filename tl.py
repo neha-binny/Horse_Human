@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image # Strreamlit works with PIL library very easily for Images
 import cv2
-model = keras.models.load_model('https://drive.google.com/file/d/1jmdtVaNdIIQd7RXFABX2oI3CbdTg6Wpw/view?usp=sharing')
+model = keras.models.load_model('/content/drive/MyDrive/Python/Major Project/horse_human2.hdf5')
 from keras.applications.mobilenet_v2 import preprocess_input,decode_predictions
 st.title("Image - CLassifier")
 upload = st.file_uploader('Label=Upload the image')
