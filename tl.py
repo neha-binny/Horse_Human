@@ -1,6 +1,6 @@
 import streamlit as st
 from tensorflow import keras
-from keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image # Strreamlit works with PIL library very easily for Images
 import cv2
@@ -10,8 +10,6 @@ st.title("Image - CLassifier")
 upload = st.file_uploader('Label=Upload the image')
 if upload is not None:
   file_bytes = np.asarray(bytearray(upload.read()), dtype=np.uint8)
-    
-    
   opencv_image = cv2.imdecode(file_bytes, 1)
   opencv_image = cv2.cvtColor(opencv_image,cv2.COLOR_BGR2RGB) # Color from BGR to RGB
   img = Image.open(upload)
