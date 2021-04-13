@@ -25,3 +25,5 @@ if upload is not None:
   categories = ['Human','Horse']
   st.title(categories[a])
    
+
+    
